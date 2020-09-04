@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/PlayerController.gd" type="Script" id=1]
+[ext_resource path="res://SandboxAssets/Spyr_Small_sheet.png" type="Texture" id=2]
+[ext_resource path="res://SandboxAssets/emotes.png" type="Texture" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.75
+height = 2.5
+
+[node name="PlayerController" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, -0.1, 0 )
+shape = SubResource( 1 )
+
+[node name="PlayerSprite" type="Sprite3D" parent="."]
+cast_shadow = 2
+flip_h = true
+pixel_size = 0.1
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )
+hframes = 3
+frame = 1
+
+[node name="LedgeCheck" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0 )
+enabled = true
+cast_to = Vector3( 1, 0, 0 )
+
+[node name="HandPosition" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0 )
+enabled = true
+cast_to = Vector3( 1, 0, 0 )
+
+[node name="WallCheckHigh" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0 )
+enabled = true
+cast_to = Vector3( 1, 0, 0 )
+
+[node name="WallCheckLow" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0 )
+enabled = true
+cast_to = Vector3( 1, 0, 0 )
+
+[node name="LedgeInd" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28965, 2.42298, 0 )
+pixel_size = 0.05
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 8
+
+[node name="JumpInd" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0022583, 3.28875, 0 )
+pixel_size = 0.05
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 8
+
+[node name="HandInd" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4377, 2.42298, 0 )
+pixel_size = 0.05
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 8
+
+[node name="WallHighInd" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.422067, 2.42298, 0 )
+pixel_size = 0.05
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 8
+
+[node name="WallLowInd" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2662, 2.42298, 0 )
+pixel_size = 0.05
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 8

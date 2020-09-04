@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Parabola.ogg-9f34ed09c1d67e386dd178edb2bed728.oggstr"
+
+[deps]
+
+source_file="res://Music/Parabola.ogg"
+dest_files=[ "res://.import/Parabola.ogg-9f34ed09c1d67e386dd178edb2bed728.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/highrise_test-2.obj-85e360d5cbb6d6c38639a4353aee8752.mesh"
+
+[deps]
+
+files=[ "res://.import/highrise_test-2.obj-85e360d5cbb6d6c38639a4353aee8752.mesh" ]
+
+source_file="res://SandboxAssets/highrise_test-2.obj"
+dest_files=[ "res://.import/highrise_test-2.obj-85e360d5cbb6d6c38639a4353aee8752.mesh", "res://.import/highrise_test-2.obj-85e360d5cbb6d6c38639a4353aee8752.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
